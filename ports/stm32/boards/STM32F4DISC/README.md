@@ -29,3 +29,20 @@ $ make BOARD=STM32F4DISC deploy
 ```
 
 [Подробная инструкция для `STM32F407`](https://github.com/micropython/micropython/wiki/Board-STM32F407-Discovery)
+
+
+# Работа с UART
+
+```pyhon
+from pyb import UART
+
+uart = UART(3, 9600)
+
+def irq_uart_handler():
+  received = uart.read()
+  print(received)
+
+uart.write('Hello World')
+
+uart.irq(handler=irq_uart_handler, trigger=UART.IRQ_RXIDLE)
+```
