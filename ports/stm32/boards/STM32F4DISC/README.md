@@ -38,7 +38,7 @@ from pyb import UART
 
 uart = UART(3, 9600)
 
-def irq_uart_handler():
+def irq_uart_handler(obj):
   received = uart.read()
   print(received)
 
