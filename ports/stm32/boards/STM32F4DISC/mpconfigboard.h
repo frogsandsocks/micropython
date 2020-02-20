@@ -22,8 +22,8 @@
 #define MICROPY_HW_UART1_TX     (pin_A9)
 #define MICROPY_HW_UART1_RX     (pin_A10)
 #endif
-#define MICROPY_HW_UART2_TX     (pin_A2)
-#define MICROPY_HW_UART2_RX     (pin_A3)
+#define MICROPY_HW_UART2_TX     (pin_D5)
+#define MICROPY_HW_UART2_RX     (pin_D6)
 #define MICROPY_HW_UART2_RTS    (pin_A1)
 #define MICROPY_HW_UART2_CTS    (pin_A0)
 #define MICROPY_HW_UART3_TX     (pin_D8)
