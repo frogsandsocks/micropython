@@ -15,13 +15,9 @@
 #define MICROPY_HW_CLK_PLLQ (7)
 
 // UART config
-#if 0
-// A9 is used for USB VBUS detect, and A10 is used for USB_FS_ID.
-// UART1 is also on PB6/7 but PB6 is tied to the Audio SCL line.
-// Without board modifications, this makes UART1 unusable on this board.
-#define MICROPY_HW_UART1_TX     (pin_A9)
-#define MICROPY_HW_UART1_RX     (pin_A10)
-#endif
+
+#define MICROPY_HW_UART1_TX     (pin_B6)
+#define MICROPY_HW_UART1_RX     (pin_B7)
 #define MICROPY_HW_UART2_TX     (pin_D5)
 #define MICROPY_HW_UART2_RX     (pin_D6)
 #define MICROPY_HW_UART2_RTS    (pin_A1)
@@ -44,8 +40,8 @@
 #define MICROPY_HW_UART6_RX     (pin_C7)
 
 // I2C busses
-#define MICROPY_HW_I2C1_SCL (pin_B6)
-#define MICROPY_HW_I2C1_SDA (pin_B7)
+#define MICROPY_HW_I2C1_SCL (pin_B8)
+#define MICROPY_HW_I2C1_SDA (pin_B9)
 #define MICROPY_HW_I2C2_SCL (pin_B10)
 #define MICROPY_HW_I2C2_SDA (pin_B11)
 
@@ -60,8 +56,8 @@
 #define MICROPY_HW_SPI2_MOSI (pin_B15)
 
 // CAN busses
-#define MICROPY_HW_CAN1_TX (pin_B9)
-#define MICROPY_HW_CAN1_RX (pin_B8)
+// #define MICROPY_HW_CAN1_TX (pin_B9)
+// #define MICROPY_HW_CAN1_RX (pin_B8)
 #define MICROPY_HW_CAN2_TX (pin_B13)
 #define MICROPY_HW_CAN2_RX (pin_B12)
 
